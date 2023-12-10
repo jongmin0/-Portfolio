@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이종민 Portfolio</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/Portfolio.css">
+
+
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper Swiper">
+    <div class="swiper-wrapper">
+      <!-- page1 -->
+      <div class="page1">
+        <div class="inner">
+          <h4>@2023 Portfolio
+            <p>Editorial design
+              <br>Advertising design</p>
+          </h4>
+
+          <h3>Boundless</h3>
+
+          <ul class="Con">
+            <p>Contact</p>
+            <li> <img src="/img/mobile phone.png" alt=""> <a href="#">010-5674-2930</a></li>
+            <li> <img src="/img/email.png" alt=""> <a href="#">jswindby12@naver.com</a></li>
+            <li></li>
+          </ul>
+
+          <strong>이종민 JongMin Lee </strong>
+
+          <ul class="Us">
+            <p>Used tools</p>
+            <li><img src="/img/illustrator.png" alt=""></li>
+            <li><img src="/img/photoshop.png" alt=""></li>
+            <li><img src="/img/figma.png" alt=""></li>
+            <li><img src="/img/visual-studio-code.png" alt=""></li>
+          </ul>
+        </div>
+      </div>
+      <!-- page1 end -->
+
+      <!-- page2 -->
+      <div class="page2">
+        <div class="inner">
+          <img src="/img/iMac.png" alt="">
+          <img src="/img/GENTLEMONSTER.png" alt="">
+          <ul class="la">
+            <li>프로젝트명 : GENTLEMONSTER</li>
+            <li>프로젝트구성 : Mail</li>
+            <li>참여도 : 100%(1인 프로젝트)</li>
+            <li>TOOL : HTML,CSS,Photoshop</li>
+            <div>
+              <a href="#">사이트 바로가기</a>
+            </div>
+          </ul>
+        </div> <!-- inner end -->
+      </div>
+      <!-- page2 end -->
+      
+      <!-- page3 -->
+      <div class="page3">
+        <div class="inner">
+          <img src="/img/iMac.png" alt="">
+          <img src="/img/ALLERMAN.png" alt="">
+          <ul class="la">
+            <li>프로젝트명 : ALLERMAN</li>
+            <li>프로젝트구성 : Mail</li>
+            <li>참여도 : 100%(1인 프로젝트)</li>
+            <li>TOOL : HTML,CSS,Photoshop</li>
+            <div>
+              <a href="#">사이트 바로가기</a>
+            </div>
+          </ul>
+        </div> <!-- inner end -->
+      </div>
+      <!-- page3 end -->
+
+      <div class="page4">
+        <div class="inner">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <h4>Poster design</h4>
+                <img src="/img/손.jpg" />
+                <img src="/img/더킨.jpg" />
+                <img src="/img/레트로 아디다스.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <h4>Poster design</h4>
+                <img src="/img/회원가입.jpg" />
+                <img src="/img/다이렉트.jpg" />
+                <img src="/img/렌트카.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <h4>Banner Design</h4>
+                <img src="/img/쇼핑타임.jpg" />
+                <img src="/img/어린이날.jpg" />
+              </div>
+              
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div> <!-- inner end -->
+      </div>
+      
+      <div class="swiper-slide"></div>
+      <div class="swiper-slide"></div>
+      <div class="swiper-slide"></div>
+      <div class="swiper-slide"></div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".Swiper", {
+      direction: "vertical",
+      slidesPerView: 1,
+      spaceBetween: 30,
+      mousewheel: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+    
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+</body>
